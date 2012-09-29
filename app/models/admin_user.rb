@@ -12,6 +12,7 @@ class AdminUser < ActiveRecord::Base
   has_many :offices
 
   def has_role?(role) # => :admin, :manager . Ex: If user.has_role?(:manager) do....
+    raise "heeree"
     self.role == role
   end
 
