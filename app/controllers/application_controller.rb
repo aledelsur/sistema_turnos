@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
+  I18n.locale = 'es'
   
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to root_url, :alert => exception.message

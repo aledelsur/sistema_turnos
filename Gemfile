@@ -12,7 +12,7 @@ gem "paperclip", '~> 3.1.2'
 gem 'haml', '~> 3.1.6'
 gem 'capistrano'
 gem 'activeadmin-cancan'
-
+gem 'thin'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
