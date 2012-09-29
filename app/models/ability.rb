@@ -5,9 +5,9 @@ class Ability
     if user.has_role? :admin
       can :manage, :all
     elsif user.has_role? :manager
-      can :manage, :offices
-      can :manage, :appointments
-      can :manage, :patients
+      can :manage, Office
+      can :manage, Appointment
+      can :manage, Patient
     end
 
     # Define abilities for the passed in user here. For example:
