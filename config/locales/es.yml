@@ -105,6 +105,9 @@ es:
       patient: Paciente
       appointment: Turno
     attributes:
+      appointment:
+        patient: "Paciente"
+        date_point: "Fecha y Hora"
       patient:
         name: "Nombre"
         last_name: "Apellido"

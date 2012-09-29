@@ -5,7 +5,7 @@ ActiveAdmin.register Appointment do
     f.inputs "Admin Details" do       
       f.input :office_id, :as => :hidden
       f.input :patient, :as => :select, :collection => Patient.all        
-      f.input :date_point, :as => :datepicker
+      f.input :date_point, :as => :just_datetime_picker
     end                               
     f.buttons                         
   end   
