@@ -1,0 +1,49 @@
+= form_for @patient, :url => admin_patients_path, :html =>{:class=> "formtastic patient"} do |f|
+  %fieldset.inputs
+    %ol
+      %li.select.input
+        = f.label :name, :class => "label"
+        = f.text_field :name
+      %li.select.input
+        = f.label :last_name, :class => "label"
+        = f.text_field :last_name
+      %li.select.input
+        = f.label :address, :class => "label"
+        = f.text_field :address
+      %li.select.input
+        = f.label :city, :class => "label"
+        = f.text_field :city
+      %li.select.input
+        = f.label :zip_code, :class => "label"
+        = f.text_field :zip_code
+      %li.select.input
+        %label
+          Teléfono
+        .tel
+          = f.label :tel_1, :class => "label"
+          = f.text_field :tel_1, :class => "tel_field"
+        .tel
+          = f.label :tel_2, :class => "label"
+          = f.text_field :tel_2, :class => "tel_field"
+        .tel
+          = f.label :tel_3, :class => "label"
+          = f.text_field :tel_3, :class => "tel_field"
+      .clear
+      %li.select.input
+        = f.label :birthday, :class => "label"
+        = date_select("patient", "birthday",:start_year => 1900, :order => [:day, :month, :year], :prompt => { :day => 'Dia', :month => 'Mes', :year => 'Año' })
+      %li.select.input
+        = f.label :birth_place, :class => "label"
+        = f.text_field :birth_place
+      %li.select.input
+        = f.label :document_type, :class => "label"
+        = f.select :document_type, [["DNI", "dni"], ["Pasaporte","passport"]]
+      %li.select.input
+        = f.label :document, :class => "label"
+        = f.text_field :document
+  %fieldset.actions
+    %ol
+      %li{id: "patient_submit_action", :class=>"action input_action"}
+        = f.submit "Crear paciente"
+
+  
