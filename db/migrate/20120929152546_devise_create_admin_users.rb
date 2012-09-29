@@ -24,6 +24,7 @@ class DeviseCreateAdminUsers < ActiveRecord::Migration
       t.datetime :last_sign_in_at
       t.string   :current_sign_in_ip
       t.string   :last_sign_in_ip
+      t.string   :refer_code
 
       ## Confirmable
       # t.string   :confirmation_token
@@ -41,6 +42,7 @@ class DeviseCreateAdminUsers < ActiveRecord::Migration
 
 
       t.timestamps
+      t.string :role
     end
 
     add_index :admin_users, :email,                :unique => true
