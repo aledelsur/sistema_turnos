@@ -28,8 +28,11 @@
 // .admin_namespace    applies to the admin namespace (eg: /admin)
 // .other_namespace    applies to a custom namespace named other (eg: /other)
 
+<<<<<<< Updated upstream
 /*= require jquery.ui.all */
 
+=======
+>>>>>>> Stashed changes
 .clear{clear: both;}
 
 .input .tel{
@@ -42,4 +45,8 @@
   font-size: 20px;
   height: 60px;
 }
+<<<<<<< Updated upstream
 body.active_admin table.index_table td{padding: 16px 13px;}
+=======
+body.active_admin table.index_table td{padding: 16px 13px;}
+>>>>>>> Stashed changes

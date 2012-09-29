@@ -1,5 +1,8 @@
 ActiveAdmin.register Office do
+<<<<<<< Updated upstream
   
+=======
+>>>>>>> Stashed changes
   menu :label => "Consultorios", :if => proc{ current_admin_user.has_role? :manager}, :parent => "Configuraciones"
 
   actions :index, :destroy, :new, :create
