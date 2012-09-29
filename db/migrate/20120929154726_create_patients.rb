@@ -15,6 +15,7 @@ class CreatePatients < ActiveRecord::Migration
       t.string :birth_place
       t.string :document_type
       t.string :document
+      t.integer :admin_user_id
       t.timestamps
     end
   end

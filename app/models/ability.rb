@@ -5,8 +5,8 @@ class Ability
     if user.has_role? :admin
       can :manage, :all
     elsif user.has_role? :manager
-      can :manage, Office
-      can :manage, Appointment
+      can :manage, Office, :admin_user_id => user.id  
+      can :manage, Appointment, :office_id => user.offices.collect{|o| o.id}
       can :manage, Patient
     end
 
