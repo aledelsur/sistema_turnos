@@ -6,7 +6,14 @@ class Ability
       can :manage, :all
     elsif user.has_role? :manager
       can :manage, Office, :admin_user_id => user.id  
-      can :manage, Appointment, :office_id => user.offices.collect{|o| o.id}
+      #can :manage, Appointment, :office => {:id => user.office_ids}
+      can :manage, Appointment do |appointment|
+        if not appointment.office
+          true
+        else 
+          user.office_ids.include?(appointment.office.id)
+        end
+      end
       can :manage, Patient
     end
 

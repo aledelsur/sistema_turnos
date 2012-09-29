@@ -94,6 +94,11 @@ es:
     cancel: "Cancelar"
     reset: "Resetear %{model}"
     required: "requerido"
+  time:
+    formats:
+      long: "%d/%m/%Y - %I:%M%p"
+    pm: "PM"
+    am: "AM"
   activerecord:
     models:
       office: Consultorio

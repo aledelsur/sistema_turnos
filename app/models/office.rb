@@ -6,4 +6,8 @@ class Office < ActiveRecord::Base
 
   has_many :appointments
 
+  def office_ids
+    offices.collect{|o| o.id}
+  end
+
 end
