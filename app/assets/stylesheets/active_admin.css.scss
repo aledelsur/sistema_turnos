@@ -27,4 +27,19 @@
 // .active_admin       applies to any Active Admin namespace
 // .admin_namespace    applies to the admin namespace (eg: /admin)
 // .other_namespace    applies to a custom namespace named other (eg: /other)
+
 /*= require jquery.ui.all */
+
+.clear{clear: both;}
+
+.input .tel{
+  float: left;
+  width: 300px;
+  .tel_field{width: 200px;}
+}
+
+.index_table.index{
+  font-size: 20px;
+  height: 60px;
+}
+body.active_admin table.index_table td{padding: 16px 13px;}
