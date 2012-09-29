@@ -6,13 +6,16 @@ class AdminUser < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :role
   # attr_accessible :title, :body
 
   has_many :offices
 
   def has_role?(role) # => :admin, :manager . Ex: If user.has_role?(:manager) do....
-    self.role == role
+    get_role == role
   end
 
+  def get_role
+    role.to_sym
+  end
 end
