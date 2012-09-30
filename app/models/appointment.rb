@@ -10,4 +10,14 @@ class Appointment < ActiveRecord::Base
     model.validates :date_point
     model.validates :patient
   end
+
+  def has_status?(status)
+    get_status == status  
+  end
+
+  def get_status
+    status.to_sym
+  end
+  
+
 end

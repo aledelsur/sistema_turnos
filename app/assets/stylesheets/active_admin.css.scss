@@ -28,9 +28,48 @@
 // .admin_namespace    applies to the admin namespace (eg: /admin)
 // .other_namespace    applies to a custom namespace named other (eg: /other)
 
+@import "mixins";
+
 /*= require jquery.ui.all */
 
 .clear{clear: both;}
+
+.dashboard-content{
+  
+  .title{
+    background-color: #E0E2E3;
+    @include dashboard-office-title;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-top: 1%;
+  }
+  .left{
+    background-color: #E0E2E3;
+    border: 1px solid #E0E2E3;
+    width: 45%;
+    height: 195px;
+  }
+  .right{
+    background-color: #E0E2E3;
+    border: 1px solid #E0E2E3;
+    border-radius: 0px 0px 8px 8px;
+    width: 45%;
+    height: 195px;
+  }
+  .one-appointment{
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 15px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 65%;
+  }
+}
+
 
 .input .tel{
   float: left;

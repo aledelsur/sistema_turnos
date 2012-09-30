@@ -1,7 +1,7 @@
 ActiveAdmin.register Patient do
   menu :label => "Pacientes", :if => proc{ current_admin_user.has_role? :manager}, :parent => "Configuraciones"
 
-  actions :index, :destroy, :new, :create, :show
+  actions :index, :destroy, :new, :create, :show, :edit, :update
 
   form :partial => "form"
 

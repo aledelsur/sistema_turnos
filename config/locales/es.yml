@@ -116,7 +116,13 @@ es:
         flor: "Piso"
         department: "Depto"
         zip_code: "Codigo postal"
-        birthday: "Cumpleaños"
+        birthday: "Fecha de nacimiento"
         birth_place: "Lugar de nacimiento"
         document_type: "Tipo de documento"
-        document: "Dni"
+        document: "Numero de documento"
+    errors:
+      messages:
+        record_invalid: "Invalido grrrrr"
+  date:
+    formats:
+      long: "Error al cargar la fecha de nacimiento"

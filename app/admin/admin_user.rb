@@ -4,6 +4,8 @@ ActiveAdmin.register AdminUser do
   scope :admin
   scope :all
 
+  actions :index, :edit, :update, :destroy, :new, :create
+
   index do                            
     column :email                     
     column :current_sign_in_at        

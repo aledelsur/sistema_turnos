@@ -1,7 +1,7 @@
 ActiveAdmin.register Office do
   menu :label => "Consultorios", :if => proc{ current_admin_user.has_role? :manager}, :parent => "Configuraciones"
 
-  actions :index, :destroy, :new, :create
+  actions :index, :destroy, :new, :create, :edit, :update
 
   #Eliminar filters
   config.clear_sidebar_sections!
