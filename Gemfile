@@ -15,6 +15,8 @@ gem 'activeadmin-cancan'
 gem "jquery-ui-rails"
 gem "just-datetime-picker"
 gem 'thin'
+gem 'fullcalendar-rails'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

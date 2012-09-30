@@ -94,6 +94,9 @@ es:
     cancel: "Cancelar"
     reset: "Resetear %{model}"
     required: "requerido"
+  date:
+    formats:
+      long: "%d/%m/%Y"
   time:
     formats:
       long: "%d/%m/%Y - %I:%M%p"
@@ -105,9 +108,19 @@ es:
       patient: Paciente
       appointment: Turno
     attributes:
+      speciality:
+        name: "Nombre"
+        created_at: "Creado el"
+      office:
+        name: "Nombre"
+        speciality: "Especialidad"
+        created_at: "Creado el"
       appointment:
         patient: "Paciente"
         date_point: "Fecha y Hora"
+        created_at: "Creado el"
+        status: "Estado"
+        office: "Consultorio"
       patient:
         name: "Nombre"
         last_name: "Apellido"
@@ -126,3 +139,6 @@ es:
   date:
     formats:
       long: "Error al cargar la fecha de nacimiento"
+        document: "Dni"
+        created_at: "Fecha Creado"
+        updated_at: "Fecha Actualizado"
