@@ -1,6 +1,13 @@
 ActiveAdmin.register Appointment do
   menu :label => "Turnos", :if => proc{ current_admin_user.has_role? :manager}
 
+  scope :all, :default => :all
+  scope :today
+  scope :pending
+  scope :cancelled
+  scope :absent
+  scope :done
+  
   form do |f|                         
     f.inputs "Admin Details" do       
       f.input :office_id, :as => :hidden
