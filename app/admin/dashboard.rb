@@ -8,6 +8,8 @@ ActiveAdmin.register_page "Dashboard" do
       end
     end
 
+    
+  
   content :title => proc{ I18n.t("active_admin.dashboard") } do
 
     render :partial => "content"

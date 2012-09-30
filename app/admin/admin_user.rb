@@ -1,5 +1,7 @@
 ActiveAdmin.register AdminUser do     
   
+  menu :priority => 2, :label => proc{ I18n.t("active_admin.admin_users") }
+
   scope :managers, :default => true
   scope :admin
   scope :all

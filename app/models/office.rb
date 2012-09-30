@@ -4,6 +4,12 @@ class Office < ActiveRecord::Base
   belongs_to :manager, :foreign_key=>:admin_user_id, :class_name => 'AdminUser'
   belongs_to :speciality
 
+  has_many :office_social_secures
+  has_many :social_secures, :through => :office_social_secures
+
+
+
+
   has_many :appointments
 
   def office_ids

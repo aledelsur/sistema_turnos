@@ -1,6 +1,9 @@
 es:
   active_admin:
-    dashboard: Inicio
+    dashboard: "Inicio"
+    social_secures: "Obras Sociales"
+    configurate_social_secures: "Configurar Obras Sociales"
+    admin_users: "Usuarios"
     dashboard_welcome:
       welcome: "Bienvenido a Active Admin. Esta es la página de inicio predeterminada."
       call_to_action: "Para agregar secciones edite 'app/admin/dashboards.rb'"
@@ -104,9 +107,9 @@ es:
     am: "AM"
   activerecord:
     models:
-      office: Consultorio
-      patient: Paciente
-      appointment: Turno
+      office: "Consultorio"
+      patient: "Paciente"
+      appointment: "Turno"
     attributes:
       speciality:
         name: "Nombre"
@@ -138,7 +141,4 @@ es:
         record_invalid: "Invalido grrrrr"
   date:
     formats:
-      long: "Error al cargar la fecha de nacimiento"
-        document: "Dni"
-        created_at: "Fecha Creado"
-        updated_at: "Fecha Actualizado"
+      long: "Error al cargar la fecha de nacimiento"      
