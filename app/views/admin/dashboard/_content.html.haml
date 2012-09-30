@@ -1,13 +1,21 @@
 .dashboard-content
-  .left
-    .title
-      Consultorio del Dr. Marcelo Duperré
-    .office-content
-      .one-appointment
-        Este es el primer turno !
-  .right
-    .title
-      Consultorio del Dr. Marcelo Duperré
-    .office-content
-      Este es el primer turno !
-  .clear
+  - @offices.each do |office|
+    .office
+      .title
+        Consultorio #{office.name}
+      %h3{:class=>"sub-title"}
+        Turnos del día
+      .office-content
+        - office.appointments.each do |appointment|
+          .one-appointment
+            .left
+              %span{:class=>"patient-name"}
+                = appointment.patient.complete_name
+              %span{:class=>"date-point"}
+                = appointment.date_point.strftime("%H:%M")
+              .social-secure
+                = appointment.social_secure.name
+            .right
+              = link_to "Vino", "#"
+              =#PONER CUANTAS VECES ESTUVO AUSENTE. SI NUNCA FALTO NO PONER NADA
+            .clear

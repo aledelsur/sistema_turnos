@@ -4,4 +4,5 @@ SistemaTurnos::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   root :to => 'site#index'
+
 end

@@ -5,7 +5,7 @@ class Ability
     if user.has_role? :admin
       can :manage, :all
     elsif user.has_role? :manager
-      can :manage, Office, :admin_user_id => user.id  
+      can :manage, Office, :admin_user_id => user.id
       #can :manage, Appointment, :office => {:id => user.office_ids}
       can :manage, Appointment do |appointment|
         if not appointment.office

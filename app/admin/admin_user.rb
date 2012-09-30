@@ -16,7 +16,7 @@ ActiveAdmin.register AdminUser do
 
   form do |f|                         
     f.inputs "Admin Details" do       
-      f.input :email, :required => true          
+      f.input :email, :required => true
       f.input :role, :as => :select, :collection => AdminUser.user_roles, :required => true         
       f.input :password , :required => true 
     end                               

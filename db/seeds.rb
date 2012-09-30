@@ -34,3 +34,63 @@ unless speciality
   Speciality.create(:name => "Psiquiatria")
   Speciality.create(:name => "Traumatologia")
 end
+
+social_secure = SocialSecure.find_by_name("OSDE")
+unless social_secure
+  o = SocialSecure.create(:name=>"OSDE")
+  puts "Creating Social Secure " + o.name
+end
+
+social_secure = SocialSecure.find_by_name("OSECAC")
+unless social_secure
+  o = SocialSecure.create(:name=>"OSECAC")
+  puts "Creating Social Secure " + o.name
+end
+
+social_secure = SocialSecure.find_by_name("OSPAT")
+unless social_secure
+  o = SocialSecure.create(:name=>"OSPAT")
+  puts "Creating Social Secure " + o.name
+end
+
+social_secure = SocialSecure.find_by_name("OSPERYHRA")
+unless social_secure
+  o = SocialSecure.create(:name=>"OSPERYHRA")
+  puts "Creating Social Secure " + o.name
+end
+
+social_secure = SocialSecure.find_by_name("Paramed")
+unless social_secure
+  o = SocialSecure.create(:name=>"Paramed")
+  puts "Creating Social Secure " + o.name
+end
+
+social_secure = SocialSecure.find_by_name("Pleno")
+unless social_secure
+  o = SocialSecure.create(:name=>"Pleno")
+  puts "Creating Social Secure " + o.name
+end
+
+social_secure = SocialSecure.find_by_name("Swiss Medical Group")
+unless social_secure
+  o = SocialSecure.create(:name=>"Swiss Medical Group")
+  puts "Creating Social Secure " + o.name
+end
+
+social_secure = SocialSecure.find_by_name("Seros")
+unless social_secure
+  o = SocialSecure.create(:name=>"Seros")
+  puts "Creating Social Secure " + o.name
+end
+
+social_secure = SocialSecure.find_by_name("Medife")
+unless social_secure
+  o = SocialSecure.create(:name=>"Medife")
+  puts "Creating Social Secure " + o.name
+end
+
+social_secure = SocialSecure.find_by_name("Galeno")
+unless social_secure
+  o = SocialSecure.create(:name=>"Galeno")
+  puts "Creating Social Secure " + o.name
+end
