@@ -4,6 +4,8 @@ class Appointment < ActiveRecord::Base
   scope :absent, lambda{where(:status => :done)}
   scope :cancelled, lambda{where(:status => :done)}
   scope :today, lambda{where(:date_point => Date.today)}
+  
+  default_scope order("date_point asc")
 
   just_define_datetime_picker :date_point, :add_to_attr_accessible => true
   # Status attribute can be: :pending - :done - :absent - :cancelled

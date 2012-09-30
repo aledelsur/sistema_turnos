@@ -11,6 +11,12 @@ ActiveAdmin.register Patient do
     default_actions
   end
 
+  filter :name
+  filter :last_name
+  filter :city
+  filter :document
+  
+
   show :title => :complete_name
 
   

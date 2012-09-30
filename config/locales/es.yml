@@ -120,6 +120,7 @@ es:
         date_point: "Fecha y Hora"
         created_at: "Creado el"
         status: "Estado"
+        office: "Consultorio"
       patient:
         name: "Nombre"
         last_name: "Apellido"
